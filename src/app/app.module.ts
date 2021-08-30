@@ -4,8 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import {AppRoutingModule} from './app-routing.module'
 
 import { AppComponent } from './app.component';
-import { PatientListComponent } from './patient-list/patient-list.component';
-import { PatientService } from './patient.service';
+import { PatientListComponent } from './patient/patient-list/patient-list.component';
+import { PatientService } from './patient/services/patient.service';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({

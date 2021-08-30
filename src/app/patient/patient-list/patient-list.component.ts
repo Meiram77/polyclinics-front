@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {PatientModel} from "../shared/patient.model";
-import {PatientService} from "../patient.service";
+import {PatientModel} from "../../shared/patient.model";
+import {PatientService} from "../services/patient.service";
 
 @Component({
   selector: 'app-patient-list',
