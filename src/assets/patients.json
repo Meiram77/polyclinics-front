@@ -1,0 +1,12 @@
+[
+    {
+        "patientName": "Biba",
+        "iin": "970407351028",
+        "orgId": 100
+    },
+    {
+        "patientName": "Meiram",
+        "iin": "9898989898999",
+        "orgId": 200
+    }
+]

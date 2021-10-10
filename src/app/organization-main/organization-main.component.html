@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-7">
+            <app-organization-list (sendOrgList) = "getOrgList($event)"></app-organization-list>
+<!--            <app-organization-list></app-organization-list>-->
+        </div>
+        <div class="col-lg-5">
+            <app-organization-detail [filteredPatients] = "filteredPatients"></app-organization-detail>
+        </div>
+    </div>
+</div>

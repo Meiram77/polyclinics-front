@@ -1,0 +1,8 @@
+<form>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Открепить пациента</label>
+        <input #iin type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Введите ИИН пациента">
+        <small id="emailHelp" class="form-text text-muted">Введите ИИН пациента для открепления от мед.учреждения</small>
+    </div>
+    <button type="submit" class="btn btn-primary" (click) = "deletePatient()">Открепить</button>
+</form>

@@ -1,0 +1,20 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>
+                Имя пациента
+            </th>
+
+            <th>
+                ИИН
+            </th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let patient of res">
+            <td>{{patient.patientName}}</td>
+            <td>{{patient.iin}}</td>
+        </tr>
+    </tbody>
+</table>

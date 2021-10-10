@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="row" style="margin-top: 50px">
+        <div class="col-lg-7" [ngStyle] = "{'text-align': 'center'}">
+            <div>
+                <button
+                        class="btn btn-primary"
+                        [ngStyle] = "{'width': '50%'}"
+                        (click) = "getMode('addPatient')"
+                >Прикрепить пациента</button>
+                <app-patient-add
+                        *ngIf="mode === 'addPatient'"
+                        (newPatient)="getNewElements($event)"></app-patient-add>
+                <hr>
+
+                <button class="btn btn-info" style = "width: '50%'"
+                        (click) = "getMode('findPatient')">Найти пациента</button>
+
+
+                <app-patient-search  *ngIf="mode === 'findPatient'"
+                                    (sendPatientFoundByIIN) = getNewElem($event)></app-patient-search>
+
+                <hr>
+
+                <button class="btn btn-danger" [ngStyle] = "{'width': '50%'}"
+                        (click) = "getMode('delPatient')">Открепить пациента</button>
+
+                <app-patient-del *ngIf="mode === 'delPatient'"
+                                 (sendPatientDeleteByIIN)= getDeleteResponse($event)></app-patient-del>
+
+
+            </div>
+        </div>
+
+
+        <div class="col-lg-5">
+            <app-patient-list
+                    [res] = "patientList"></app-patient-list>
+        </div>
+    </div>
+
+</div>

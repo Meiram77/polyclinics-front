@@ -1,0 +1,6 @@
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let org of orgList">
+    <app-organization-item [org] = "org"
+    (getOrgId)="getOrgId($event)"></app-organization-item>
+  </li>
+</ul>

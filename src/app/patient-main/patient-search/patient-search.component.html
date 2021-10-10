@@ -1,0 +1,9 @@
+<form>
+    <div class="form-group">
+        <label for="exampleInputEmail1">ИИН пациента</label>
+        <input #iin type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ИИН">
+        <small id="emailHelp" class="form-text text-muted">Введите ИИН пациента</small>
+    </div>
+    <button type="submit" class="btn btn-primary" (click) = "searchPatient()">Поиск</button>
+</form>
+
